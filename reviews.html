@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMILY'S ANIME REVIEWS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html">
+  <img src="images/logo.png" alt="Em's Anime Reviews">
+</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="reviews.html">All Reviews</a>
+    </nav>
+  </header>
+
+  <main class="reviews-page">
+    <h1>All Reviews</h1>
+
+    <label class="sort-label" for="sort-reviews">
+      Sort reviews
+      <select id="sort-reviews">
+        <option value="newest">Home</option>
+        <option value="alphabetical">Alphabetical</option>
+      </select>
+    </label>
+
+    <div id="all-reviews" class="all-review-grid"></div>
+  </main>
+
+  <script src="reviews.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

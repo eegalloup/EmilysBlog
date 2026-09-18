@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily's Anime Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html">
+  <img src="images/logo.png" alt="Em's Anime Reviews">
+</a>
+    <nav>
+      <a href="#recent">Recent Watches</a>
+      <a href="reviews.html">All Reviews</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="images/hero-image.jpg" alt="Akira Hero Image">
+
+
+      <a class="scroll-arrow" href="#spacer" aria-label="Scroll to current show">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v13M6.5 12.5 12 18l5.5-5.5"></path>
+        </svg>
+      </a>
+
+    </section>
+
+    <div id="spacer" class="spacer"></div>
+
+    <section id="current-show" class="current-shows">
+      <div class="current-shows-heading">
+        <h2>Currently Watching</h2>
+      </div>
+
+      <div class="current-show-grid">
+        <article class="current-show-card">
+          <div class="current-show-image show-one-image"></div>
+
+          <div class="current-show-copy">
+            <h3>One Piece</h3>
+            <p class="show-details"><strong>Saga: Water 7</strong></p>
+            <p class="show-details">Episode 327</p>
+
+            <div class="progress-label">
+              <span>Watch progress</span>
+              <span>28%</span>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 28%;"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="current-show-card">
+          <div class="current-show-image show-two-image"></div>
+
+          <div class="current-show-copy">
+            <h3>DanDaDan</h3>
+            <p class="show-details"><strong>Season 1</strong></p>
+            <p class="show-details">Episode 9 of 24</p>
+
+            <div class="progress-label">
+              <span>Watch progress</span>
+              <span>37%</span>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 37%;"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+</section>
+
+    <section id="recent" class="recent-reviews">
+      <div class="section-heading">
+        <div>
+          <h2>Recent Watches</h2>
+        </div>
+      </div>
+
+      <div id="recent-reviews" class="review-grid"></div>
+
+      <a class="button" href="reviews.html">See all reviews</a>
+    </section>
+
+    <section class="favorites-section">
+      <div class="favorites-heading">
+        <div>
+          <h2>My Favorites</h2>
+        </div>
+
+      </div>
+
+      <div id="favorite-reviews" class="favorites-shelf"></div>
+    </section>
+
+  </main>
+
+  
+
+  <script src="reviews.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
