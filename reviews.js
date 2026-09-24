@@ -7,8 +7,10 @@ const reviews = [
     rating: 4,
     tags: ["Worth the Hype"],
     review: `
-      <p>Your full review of <em>One Piece: Water 7</em> goes here.</p>
-      <p>You can write as many paragraphs as you want inside this section.</p>
+      <p><em>One Piece: Water 7</em> was truly a fun watch.</p>
+      <p> I feel like this is the point in the show where the stakes have raised and the overarching plot starts to emerge. We are introduced to the World Government as the main villains and have solidified the idea of the Blank Century, which I am excited to see unfold. </p>
+      <p> I forsee Nico Robin's backstory being an integral part to the plotline of the show (I hope). I can see the creators expanding this with the characters' reasearch of the polyglyphs, which I hope the continue.</p>
+      <p> Also, I loved the addition of Franky to the show. He is a character that is easy to enjoy and fits well with the Straw Hats' dynamic. I have been Franky-pilled. SUUUUUPERRRR!!!★</p>
     `
   },
   
@@ -452,7 +454,9 @@ const reviews = [
   date: "2020-09-24",
   image: "covers/i-want-to-eat-your-pancreas.jpg",
   rating: 0,
-  review: `<p>Your review of <em>I Want to Eat Your Pancreas</em> goes here.</p>`
+  review: `<p><em>I Want to Eat Your Pancreas</em> is emotional torture porn. </p>
+  <p>This was UNBELIEVABLY sad. I cried for two hours straight. snotty nose crying. It was not pretty. This was an amazing movie, but i will never watch it again.
+ <p>The animation was amazing, especially on the fireworks scene. The story was impeccable. It was well-written and well-executed. I do think the endless sadness in the end was a little overwhelming thought. It felt like I was getting repeatedly punched in the gut every 8 minutes for that last 1/3. However, the ending was really beautiful and added a twinge of happinesses to it haha. I think my favorite thing was definitely the main characters growth. Obviously, that’s the main point of the movie, but it was so emotionally powerful and endearing. I went from wanting to beat him to death with a hammer to wanting the best for him. 😎</p>`
 },
 {
   id: "the-promised-neverland",

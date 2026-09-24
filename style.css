@@ -509,8 +509,8 @@ footer {
 }
 
 .button:hover {
-  border-color: #df6c43;
-  background: #df6c43;
+  border-color: #3C657D;
+  background: #3C657D;
   color: white;
 }
 
@@ -636,7 +636,7 @@ footer {
   gap: 18px;
   overflow-x: auto;
   padding-bottom: 15px;
-  scrollbar-color: #df6c43 #e7e3db;
+  scrollbar-color: #0B3E5C #e7e3db;
   scrollbar-width: thin;
 }
 
@@ -658,7 +658,7 @@ footer {
 
 .favorite-poster:hover img {
   transform: translateY(-7px);
-  box-shadow: 10px 12px 0 #df6c43;
+  box-shadow: 10px 12px 0 #BB2224;
 }
 
 .favorite-info {
