@@ -453,7 +453,8 @@ const reviews = [
   title: "I Want to Eat Your Pancreas",
   date: "2020-09-24",
   image: "covers/i-want-to-eat-your-pancreas.jpg",
-  rating: 0,
+  rating: 4,
+  tags: ["Emotional Torture"],
   review: `<p><em>I Want to Eat Your Pancreas</em> is emotional torture porn. </p>
   <p>This was UNBELIEVABLY sad. I cried for two hours straight. snotty nose crying. It was not pretty. This was an amazing movie, but i will never watch it again.
  <p>The animation was amazing, especially on the fireworks scene. The story was impeccable. It was well-written and well-executed. I do think the endless sadness in the end was a little overwhelming thought. It felt like I was getting repeatedly punched in the gut every 8 minutes for that last 1/3. However, the ending was really beautiful and added a twinge of happinesses to it haha. I think my favorite thing was definitely the main characters growth. Obviously, that’s the main point of the movie, but it was so emotionally powerful and endearing. I went from wanting to beat him to death with a hammer to wanting the best for him. 😎</p>`
