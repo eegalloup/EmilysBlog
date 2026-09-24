@@ -1,99 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Montserrat:wght@400;500;600;700&display=swap");
 
-img { max-width: 100%; }
+@font-face {
+  font-family: "Cubano";
+  src: url("fonts/cubano/Cubano.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ink: #1e2924;
+  --paper: #CBCCD4;
+  --sage: #d9e3d6;
+  --yellow: #E7B70B;
+  --muted: #647069;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.6;
+}
 
 .site-header,
 main,
 footer {
-  width: min(100%, var(--content-width));
-  margin-inline: auto;
+  max-width: 1120px;
+  margin: auto;
 }
 
-/* Header */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 20px 28px;
-  background: var(--card);
-  box-shadow: 0 3px 12px rgba(30, 41, 36, 0.08);
+  align-items: center;
+  padding: 27px 28px;
 }
 
-.site-logo { display: block; line-height: 0; }
-.site-logo img { display: block; width: 350px; height: auto; }
-
-nav { display: flex; gap: 26px; }
-nav a,
-.button,
-.back {
+.brand {
   color: var(--ink);
-  font-family: "Cubano", sans-serif;
-  font-weight: 400;
+  font-family: "DM Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
   text-decoration: none;
 }
 
-nav a { font-size: 1.2rem; }
+nav {
+  display: flex;
+  gap: 26px;
+}
+
+nav a {
+  color: var(--ink);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 nav a:hover,
-.button:hover,
-.back:hover,
-.review-title-link:hover { color: var(--yellow); }
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cubano", sans-serif;
-  font-weight: 400;
+.read-more:hover,
+.back:hover {
+  color: var(--yellow);
 }
 
-.eyebrow,
-.meta {
-  margin: 0;
-  color: var(--red);
-  font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-}
-
-/* Hero */
 .hero {
-  position: relative;
-  isolation: isolate;
   width: 100vw;
-  height: clamp(500px, 72vw, 760px);
   max-width: none;
   margin-left: calc(50% - 50vw);
-  overflow: hidden;
+  line-height: 0;
+  position: relative;
 }
 
 .hero-image {
-  position: absolute;
-  inset: 0;
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
 }
 
 .scroll-arrow {
   position: absolute;
-  bottom: 28px;
+  bottom: max(24px, env(safe-area-inset-bottom));
   left: 50%;
-  z-index: 2;
+  z-index: 10;
   display: grid;
   width: 46px;
   height: 46px;
   place-items: center;
   transform: translateX(-50%);
-  border: 1px solid #fff;
+  border: 1px solid white;
   border-radius: 50%;
-  background: rgba(30, 41, 36, 0.28);
-  color: #fff;
+  color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .scroll-arrow svg {
@@ -108,40 +113,283 @@ h1, h2, h3, h4, h5, h6 {
 
 .scroll-arrow:hover {
   transform: translateX(-50%) translateY(5px);
-  background: #fff;
-  color: var(--ink);
+  background: white;
+  color: #1e2924;
 }
 
-/* Current shows */
+.hero .eyebrow {
+  color: #f2bca7;
+}
+
+.hero h1 {
+  max-width: 750px;
+  margin: 16px 0 24px;
+  color: white;
+  font-family: "Cubano";
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 540px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+}
+
+.intro {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.posts {
+  padding: 0 28px 90px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  margin: 0 0 14px;
+  font-family: "Cubano";
+  font-size: 2.4rem;
+}
+
+.post-card {
+  background: #fffdf8;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1.13fr 0.87fr;
+  margin-bottom: 30px;
+}
+
+.post-image {
+  min-height: 270px;
+}
+
+.featured .post-image {
+  min-height: 430px;
+}
+
+.image-one {
+  background:
+    linear-gradient(140deg, rgba(31, 47, 35, 0.1), rgba(255, 232, 199, 0.1)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1300&q=80")
+    center / cover;
+}
+
+.image-two {
+  background:
+    url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80")
+    center / cover;
+}
+
+.image-three {
+  background:
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80")
+    center / cover;
+}
+
+.post-copy {
+  padding: 38px;
+}
+
+.post-copy h3 {
+  margin: 14px 0;
+  font-family: "Cubano";
+  font-size: 2rem;
+  line-height: 1.12;
+}
+
+.post-copy h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.post-copy p:not(.meta) {
+  color: var(--muted);
+}
+
+.read-more {
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.post-grid .post-copy {
+  padding: 26px;
+}
+
+.post-grid .post-copy h3 {
+  font-size: 1.6rem;
+}
+
+.about {
+  margin: 0 28px 88px;
+  padding: 70px max(30px, 8vw);
+  background: var(--sage);
+  text-align: center;
+}
+
+.about h2 {
+  margin: 10px 0;
+  font-size: 3.2rem;
+}
+
+.about p:last-child {
+  max-width: 500px;
+  margin: auto;
+  color: #4e5b53;
+}
+
+.article-page {
+  max-width: 830px;
+  padding: 55px 28px 90px;
+}
+
+.back {
+  color: var(--ink);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.article-page article {
+  margin-top: 75px;
+}
+
+.article-page h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+}
+
+.standfirst {
+  max-width: 620px;
+  color: var(--muted);
+  font-family: "Cubano";
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.article-image {
+  height: 440px;
+  margin: 42px 0;
+}
+
+.article-body {
+  max-width: 650px;
+  margin: auto;
+  font-size: 1.08rem;
+}
+
+.article-body h2 {
+  margin-top: 42px;
+  font-family: "Cubano";
+  font-size: 2rem;
+}
+
+.article-body code {
+  padding: 2px 5px;
+  background: #eeeae0;
+  font-size: 0.85em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px;
+  border-top: 1px solid #d5d8cf;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 700px) {
+  .featured,
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured .post-image {
+    min-height: 290px;
+  }
+
+  .article-image {
+    height: 280px;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer span {
+    display: block;
+    margin-top: 4px;
+  }
+}
+
 .current-shows {
-  width: min(100%, var(--content-width));
+  max-width: 1120px;
   margin: 70px auto 100px;
   padding: 0 28px;
 }
 
 .current-shows-heading h2 {
   margin: 8px 0 28px;
+  font-family: "Cubano";
   font-size: clamp(2.2rem, 4vw, 3.6rem);
 }
 
 .current-show-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.current-show-card { overflow: hidden; background: var(--card); }
+.current-show-card {
+  overflow: hidden;
+  background: #FFFDF8;
+}
+
 .current-show-image {
   min-height: 290px;
   background-position: center;
   background-size: cover;
 }
-.show-one-image { background-image: url("covers/one-piece.webp"); }
-.show-two-image { background-image: url("covers/dandadan.jpeg"); }
 
-.current-show-copy { padding: 28px; }
-.current-show-copy h3 { margin: 0 0 10px; font-size: 2rem; }
-.show-details { margin: 3px 0; color: #4e5b53; }
+.show-one-image {
+  background-image: url("covers/one-piece.webp");
+}
+
+.show-two-image {
+  background-image: url("covers/dandadan.jpeg");
+}
+
+.current-show-copy {
+  padding: 28px;
+}
+
+.current-show-copy h3 {
+  margin: 0 0 10px;
+  font-family: "Cubano";
+  font-size: 2rem;
+}
+
+.show-details {
+  margin: 3px 0;
+  color: #4e5b53;
+}
 
 .progress-label {
   display: flex;
@@ -158,34 +406,469 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(30, 41, 36, 0.15);
   border-radius: 20px;
 }
-.progress-fill { height: 100%; background: var(--red); border-radius: inherit; }
 
-/* Review collections */
-.recent-reviews,
-.reviews-page,
-.favorites-section {
-  width: min(100%, var(--content-width));
-  margin-inline: auto;
-  padding-inline: 28px;
+.progress-fill {
+  height: 100%;
+  background: #BB2224;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .current-show-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .recent-reviews,
-.favorites-section { margin-bottom: 100px; }
-.reviews-page { padding-top: 90px; padding-bottom: 95px; }
-.reviews-page h1 { margin: 10px 0 0; font-size: clamp(3rem, 6vw, 5rem); }
-
-.section-heading { margin-bottom: 25px; }
-.section-heading h2 { margin: 0 0 14px; font-size: 2.4rem; }
+.reviews-page {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 28px 95px;
+}
 
 .review-grid,
 .all-review-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
 .review-card {
   overflow: hidden;
-  background: var(--card);
+  background: #fffdf8;
+}
+
+.review-card:hover {
+  box-shadow: 0 14px 28px rgba(30, 41, 36, 0.2);
+}
+
+.review-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.review-copy {
+  padding: 20px;
+}
+
+.review-copy h3 {
+  margin: 8px 0;
+  font-family: "Cubano";
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.review-copy a {
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rating {
+  margin: 10px 0 14px;
+  color: #df6c43;
+  letter-spacing: 0.08em;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  margin: 45px auto 0;
+  padding: 13px 22px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: #3C657D;
+  background: #3C657D;
+  color: white;
+}
+
+.reviews-page {
+  padding-top: 90px;
+}
+
+.reviews-page h1 {
+  margin-top: 10px;
+  font-family: "Cubano";
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.sort-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sort-label select {
+  padding: 9px 12px;
+  border: 1px solid #c6ccc2;
+  background: #fffdf8;
+  color: var(--ink);
+  font: inherit;
+}
+
+@media (max-width: 850px) {
+  .review-grid,
+  .all-review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .current-show {
+    margin-left: 28px;
+    margin-right: 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .current-show-image {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 500px) {
+  .review-grid,
+  .all-review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .review-copy {
+    padding: 14px;
+  }
+
+  .review-copy h3 {
+    font-size: 1.25rem !important;
+  }
+}
+@media (max-width: 500px) {
+
+  .current-show-copy {
+    padding: 35px 28px;
+  }
+}
+
+.spacer {
+  height: 70px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 30px;
+}
+
+.tag {
+  padding: 6px 10px;
+  border: 1px solid #c6ccc2;
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: #BB2224;
+}
+
+.favorites-section {
+  max-width: 1120px;
+  margin: 0 auto 100px;
+  padding: 0 28px;
+}
+
+.favorites-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.favorites-heading h2 {
+  margin: 8px 0 0;
+  font-family: "Cubano";
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.favorites-heading > p {
+  max-width: 310px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.favorites-shelf {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  scrollbar-color: #0B3E5C #e7e3db;
+  scrollbar-width: thin;
+}
+
+.favorite-poster {
+  display: block;
+  flex: 0 0 180px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.favorite-poster img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  box-shadow: 7px 7px 0 #d9e3d6;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-poster:hover img {
+  transform: translateY(-7px);
+  box-shadow: 10px 12px 0 #BB2224;
+}
+
+.favorite-info {
+  padding-top: 14px;
+}
+
+.favorite-info h3 {
+  margin: 0;
+  font-family: "Cubano";
+  font-size: 1.25rem;
+  line-height: 1.1;
+}
+
+.favorite-info p {
+  margin: 5px 0 0;
+  color: #df6c43;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 700px) {
+  .favorites-heading {
+    display: block;
+  }
+
+  .favorites-heading > p {
+    margin-top: 14px;
+  }
+
+  .favorite-poster {
+    flex-basis: 145px;
+  }
+}
+
+.review-image-link {
+  display: block;
+}
+
+.review-title-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.review-title-link:hover {
+  color: #df6c43;
+}
+
+.review-copy h3 {
+  margin: 8px 0;
+  font-family: "Cubano";
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.review-title-link {
+  color: var(--ink);
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.review-card .review-copy h3 {
+  font-size: 1.5rem !important;
+}
+
+.review-card .review-copy h3 .review-title-link {
+  font-size: inherit !important;
+}
+
+.article-page {
+  max-width: 1160px;
+  padding-top: 60px;
+}
+
+.article-page > article {
+  margin-top: 45px;
+}
+
+.review-detail {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(45px, 8vw, 110px);
+}
+
+.review-poster {
+  position: sticky;
+  top: 35px;
+}
+
+.review-poster img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  box-shadow: 15px 15px 0 #d9e3d6;
+}
+
+.review-content {
+  max-width: 650px;
+  padding: 20px 0 70px;
+}
+
+.review-content h1 {
+  margin: 12px 0 18px;
+  font-family: "Cubano";
+  font-size: clamp(3rem, 5vw, 5.2rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.large-rating {
+  margin: 0 0 20px;
+  color: #df6c43;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+}
+
+.review-body {
+  margin-top: 42px;
+  color: #344039;
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.review-body p {
+  margin: 0 0 25px;
+}
+
+.review-body p:first-child {
+  color: var(--ink);
+  font-family: "Cubano"; 
+  font-size: 1.35rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 750px) {
+  .review-detail {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .review-poster {
+    position: static;
+    width: min(300px, 75vw);
+  }
+
+  .review-content {
+    padding-top: 0;
+  }
+}
+
+.site-logo {
+  display: block;
+  line-height: 0;
+}
+
+.site-logo img {
+  display: block;
+  width: 350px;
+  height: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a,
+.button,
+.back {
+  font-family: "Cubano";
+  font-weight: 400;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper);
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    gap: 14px;
+    padding: 16px 18px;
+  }
+
+  .site-logo img {
+    width: 125px;
+  }
+
+  .site-header nav {
+    gap: 14px;
+  }
+
+  .site-header nav a {
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+}
+
+.hero,
+main {
+  overflow: visible !important;
+}
+
+.scroll-arrow {
+  bottom: 32px !important;
+  z-index: 999 !important;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: calc(100svh - 70px);
+    min-height: 0;
+    padding: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  .scroll-arrow {
+    bottom: 28px !important;
+    z-index: 999 !important;
+  }
 }
