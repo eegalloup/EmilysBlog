@@ -884,3 +884,13 @@ nav a,
     z-index: 5;
   }
 }
+
+.hero,
+main {
+  overflow: visible !important;
+}
+
+.scroll-arrow {
+  bottom: 32px !important;
+  z-index: 999 !important;
+}
