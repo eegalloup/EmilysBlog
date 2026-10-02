@@ -884,10 +884,28 @@ main {
   }
 }
 
+.review-sidebar {
+  align-self: start;
+}
+
+.review-sidebar .back {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.review-poster {
+  position: static;
+}
+
 @media (min-width: 751px) {
-  .review-poster {
+  .review-sidebar {
     position: sticky;
     top: 110px;
-    align-self: start;
+  }
+}
+
+@media (max-width: 750px) {
+  .review-sidebar {
+    width: min(300px, 75vw);
   }
 }
