@@ -40,7 +40,6 @@ const reviews = [
       <p>I rewatched this before going into Season 3. Season 2 has been my favorite part of the JJK series so far. Hidden Inventory PLUS Shibuya Arc. Genuinely so good. But also so depressing.</p>
       <p>Hidden Inventory is one of the strongest parts of the series, and is hyped-up for obvious reasons. The backstory behind Gojo and Geto's friendship and motives provided a lot of context going into the Shibuya Arc, and had some of my favorite plot of the series. It was fun and quirky at times, but slowly became darker as Geto turns against Jujustu. Gojo unlocking his Reversed Curse Technique is such a satisfying point in the series.</p>
       <p><strong>The Shibuya Incident. :|</strong></p>
-      <p>SPOILERS AHEAD:</p>
       <p>Toji's revival: fire. Sukuna vs Mahoraga: fire. Gojo train station: fire. Yuji vs Choso: fire.</p> But this was also sad as hell. Everyone is either dead or traumatized.</p>
       <p>The most devastating death in this arc had to be Nanami. He just wanted a vacationnnnnn.</p>
     `
