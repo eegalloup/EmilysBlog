@@ -86,8 +86,12 @@ if (singleReview) {
   if (review) {
     singleReview.innerHTML = `
   <div class="review-detail">
-    <aside class="review-poster">
-      <img src="${review.image}" alt="${review.title}">
+    <aside class="review-sidebar">
+      <a class="back" href="reviews.html">← Back to all reviews</a>
+
+      <div class="review-poster">
+        <img src="${review.image}" alt="${review.title}">
+      </div>
     </aside>
 
     <div class="review-content">
