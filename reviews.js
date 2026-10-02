@@ -518,7 +518,7 @@ const reviews = [
   image: "covers/ninokuni.jpeg",
   rating: 0,
   tags: ["Dementia"],
-  review: `<p><em>I genuinely have no recollection of the content of this movie.</em></p>
+  review: `<p>I genuinely have no recollection of the plot of this movie.</p>
           <p>I do remember that I watched this because I bought the switch game off the discount rack at Walmart for $7. And then I googled it, and it said that NiNoKuni was the related movie. So I watched this to get context for the game, and it must have been so mid that it was completely wiped from my memory. And the game sucked.</p>
   `
 },
