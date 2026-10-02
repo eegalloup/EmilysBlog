@@ -517,7 +517,10 @@ const reviews = [
   date: "2021-05-30",
   image: "covers/ninokuni.jpeg",
   rating: 0,
-  review: `<p>Your review of <em>Ni no Kuni</em> goes here.</p>`
+  tags: ["Dementia"],
+  review: `<p><em>I genuinely have no recollection of the content of this movie.</em></p>
+          <p>I do remember that I watched this because I bought the switch game off the discount rack at Walmart for $7. And then I googled it, and it said that NiNoKuni was the related movie. So I watched this to get context for the game, and it must have been so mid that it was completely wiped from my memory. And the game sucked.</p>
+  `
 },
 {
   id: "demon-slayer-kimetsu-no-yaiba",
