@@ -24,8 +24,7 @@ const reviews = [
     review: `
       <p><em>JJK S3</em> had some of the best fight scenes of the series.</p>
       <p>This season was a very thrilling watch. Although there were sections of long exposition, it didn't feel like the story dragged at any point. The fight scenes in this season were very well executed, and the animation was spectacular. I loved the use of roto in specific, especially during the scene between Yuji and Hakari. The amount of effort put into the animation makes me wonder if the animators ever saw the sun during the making of this season.</p>
-      <p>My favorite part of the series was Maki's return to the Zen'in Clan. She is one of my favorite characters across all media, and her fight scene was truly spectacular. I was on the edge of my seat the entire time.</p>
-      <p>I gave it 4 stars, because I feel that s2 was better in its overall structure, storytelling, and length. But this was an amazing addition to an already great series.</p>
+      <p>My favorite part of the series was Maki's return to the Zen'in Clan. She is one of my favorite characters across all media, and her fight scene was truly spectacular. I was on the edge of my seat the entire time. I gave it 4 stars, because I feel that s2 was better in its overall structure, storytelling, and length. But this was an amazing addition to an already great series.</p>
     `
   },
 
