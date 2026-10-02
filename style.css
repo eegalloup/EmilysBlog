@@ -883,3 +883,11 @@ main {
     z-index: 999 !important;
   }
 }
+
+@media (min-width: 751px) {
+  .review-poster {
+    position: sticky;
+    top: 110px;
+    align-self: start;
+  }
+}
