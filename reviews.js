@@ -34,10 +34,14 @@ const reviews = [
     date: "2026-04-20",
     image: "covers/jjk-season-2.webp",
     rating: 4.5,
-    tags: ["Favorite"],
+    tags: ["Favorite"]["Rewatch"],
     review: `
-      <p>Your full review of <em>JJK S2</em> goes here.</p>
-      <p>You can write as many paragraphs as you want inside this section.</p>
+      <p>SOOOOOO FIREEEEEEE. <em>and sad. :(</em></p>
+      <p>I rewatched this before going into Season 3. Season 2 has been my favorite part of the JJK series so far. Hidden Inventory PLUS Shibuya Arc. Genuinely so good. But also so depressing.</p>
+      <p>Hidden Inventory is one of the strongest parts of the series, and is hyped-up for obvious reasons. The backstory behind Gojo and Geto's friendship and motives provided a lot of context going into the Shibuya Arc, and had some of my favorite plot of the series. It was fun and quirky at times, but slowly became darker as Geto turns against Jujustu. Gojo unlocking his Reversed Curse Technique is such a satisfying point in the series.</p>
+      <p><strong>The Shibuya Incident. :|</strong></p>
+      <p>SPOILERS AHEAD: There are so many great fights in this arc. Toji's revival: fire. Sukuna vs Mahoraga: fire. Gojo train station: fire. Yuji vs Choso: fire.</p> But this was also sad as hell. Everyone is either dead or traumatized.</p>
+      <p>The most devastating death in this arc had to be Nanami. He just wanted a vacationnnnnn.</p>
     `
   },
 
@@ -513,7 +517,7 @@ const reviews = [
 },
 {
   id: "ni-no-kuni",
-  title: "Ni no Kuni",
+  title: "NiNoKuni",
   date: "2021-05-30",
   image: "covers/ninokuni.jpeg",
   rating: 0,
