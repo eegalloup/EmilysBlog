@@ -120,7 +120,11 @@ if (singleReview) {
 
   return `
     <div class="tag-list">
-      ${tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+      ${tags.map(tag => `
+  <span class="tag tag-${tag.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}">
+    ${tag}
+  </span>
+`).join("")}
     </div>
   `;
     }
