@@ -23,7 +23,7 @@ const reviews = [
     review: `
       <p><em>One Piece: Water 7</em> was truly a fun watch.</p>
       <p> I feel like this is the point in the show where the stakes have raised and the overarching plot starts to emerge. We are introduced to the World Government as the main villains and have solidified the idea of the Blank Century, which I am excited to see unfold. </p>
-      <p> I forsee Nico Robin's backstory being an integral part to the plotline of the show (I hope). I can see the creators expanding this with the characters' reasearch of the polyglyphs, which I hope the continue.</p>
+      <p> I forsee Nico Robin's backstory being an integral part of the plotline (I hope). I hope that there is continuous reasearch into the polyglyphs as the show progresses, but I feel like they might forget about them for 500 episodes. Who knows.</p>
       <p> Also, I loved the addition of Franky to the show. He is a character that is easy to enjoy and fits well with the Straw Hats' dynamic. I have been Franky-pilled. SUUUUUPERRRR!!!★</p>
     `
   },
@@ -66,8 +66,11 @@ const reviews = [
     image: "covers/one-piece-skypiea.jpeg",
     rating: 3.5,
     review: `
-      <p>Your full review of <em>One Piece: Skypiea</em> goes here.</p>
-      <p>You can write as many paragraphs as you want inside this section.</p>
+      <p><em>Skypiea</em> felt like a detour in the early One Piece story.</p>
+      <p>This entire arc felt very different from the previous world that One Piece had built. It was very mystical and it felt like it created a seprate world outside of the previous sagas.</p>
+      <p>I liked Alabasta a bit more than this arc, but I did enjoy how it tied in the plotline from Jaya. So far in the series, it felt like each arc follows: Straw Hats show up on island > Islanders feed Luffy > Inslander says something along the lines of "You guys are great, it sucks that our government is so corrupt" > Luffy overthrows the government > They dip.</p>
+      <p>In a way, this followed the same general plotline, but I liked how it tied the creation of Skypiea in with Jaya, and the shadow figures we saw at the beginning of the arc. Because of these full circle moments, it felt like a seprate story within the main plotline.</p>
+      <p>Eneru was kinda cool I guess. It felt like Eneru vs. Luffy introduced some interesting foresight into the expansion of Luffy's powers.</p>
     `
   },
 
