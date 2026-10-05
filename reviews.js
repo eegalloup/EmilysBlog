@@ -578,7 +578,7 @@ const reviews = [
 
 {
   id: "end-of-evangelion",
-  title: "End of Evangelion",
+  title: "The End of Evangelion",
   date: "2022-09-23",
   image: "covers/end-of-evangelion.jpg",
   rating: 0,
