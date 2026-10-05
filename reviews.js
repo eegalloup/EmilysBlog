@@ -5,7 +5,7 @@ const reviews = [
     date: "2026-10-05",
     image: "covers/dandadan.jpeg",
     rating: 2.5,
-    tags: ["DNF"],
+    tags: ["Shounen","DNF"],
     review: `
       <p>Unfortunately, it was not for me.</p>
       <p>I didn't feel super connected to the characters in the story. Also, the main plot being that they needed to retrive a high schooler's stolen testicles? Idk man.</p>
@@ -19,7 +19,7 @@ const reviews = [
     date: "2026-09-18",
     image: "covers/one-piece-water-7.jpeg",
     rating: 3.5,
-    tags: ["Storytelling"],
+    tags: ["Shounen","Storytelling"],
     review: `
       <p><em>One Piece: Water 7</em> was truly a fun watch.</p>
       <p> I feel like this is the point in the show where the stakes have raised and the overarching plot starts to emerge. We are introduced to the World Government as the main villains and have solidified the idea of the Blank Century, which I am excited to see unfold. </p>
@@ -34,7 +34,7 @@ const reviews = [
     date: "2026-04-25",
     image: "covers/jjk-season-3.webp",
     rating: 4,
-    tags: ["Fight Scenes","Animation"],
+    tags: ["Shounen","Fight Scenes","Animation"],
     review: `
       <p><em>JJK S3</em> had some of the best fight scenes of the series.</p>
       <p>This season was a very thrilling watch. Although there were sections of long exposition, it didn't feel like the story dragged at any point. The fight scenes in this season were very well executed, and the animation was spectacular. I loved the use of roto in specific, especially during the scene between Yuji and Hakari. The amount of effort put into the animation makes me wonder if the animators ever saw the sun during the making of this season.</p>
@@ -48,7 +48,7 @@ const reviews = [
     date: "2026-04-20",
     image: "covers/jjk-season-2.webp",
     rating: 4.5,
-    tags: ["Favorite","Rewatch"],
+    tags: ["Shounen","Favorite","Rewatch"],
     review: `
       <p>SOOOOOO FIREEEEEEE. <em>and sad. :(</em></p>
       <p>I rewatched this before going into Season 3. Season 2 has been my favorite part of the JJK series so far. Hidden Inventory PLUS Shibuya Arc. Genuinely so good. But also so depressing.</p>
@@ -65,6 +65,7 @@ const reviews = [
     date: "2026-03-15",
     image: "covers/one-piece-skypiea.jpeg",
     rating: 3,
+    tags: ["Shounen"],
     review: `
       <p><em>Skypiea</em> felt like a detour in the early One Piece story.</p>
       <p>This entire arc felt very different from the previous world that One Piece had built. It was very mystical and it felt like it created a seprate world outside of the previous sagas.</p>
@@ -81,7 +82,7 @@ const reviews = [
     date: "2026-03-08",
     image: "covers/perfect-blue.jpeg",
     rating: 5,
-    tags: ["Visuals"],
+    tags: ["Horror","Visuals"],
     review: `
       <p>I can see where <em>Black Swan</em> took inspiration from <em>Perfect Blue.</em></p>
       <p>This movie was incredibly trippy and visually engaging. I loved disecting the film at the end, trying to discern what was real and what wasn't.</p>
@@ -96,6 +97,7 @@ const reviews = [
     date: "2026-03-01",
     image: "covers/one-piece-alabasta.jpg",
     rating: 3,
+    tags: ["Shounen"],
     review: `
       <p><em>Alabasta</em> is when the series <em>really</em> kicks off.</p>
       <p>I thought I was gonna give up. I asked myself: <em>am I really going to watch 1000 more episodes of this?</em> After watching the Straw Hats noodle around for 90 episodes, I wondered, was it really worth it?</p>
@@ -112,7 +114,7 @@ const reviews = [
     date: "2026-02-10",
     image: "covers/one-piece-east-blue.jpg",
     rating: 2.5,
-    tags: ["Lighthearted"],
+    tags: ["Shounen","Lighthearted"],
     review: `
       <p><em>East Blue</em> is a slow start to the series, but is lighthearted and fun.</p>
       <p>I'm not gonna sugarcoat it: it's slow and the animation is tough. But, it is an easy watch with introductions to the East Blue crew. Most of this saga is spent gathering the initial crew before heading to the Grand Line. It does drag at some points and some of the plots are a bit lower energy, notably during Syrup Village (hot take).</p>
@@ -128,6 +130,7 @@ const reviews = [
     date: "2024-06-15",
     image: "covers/jjk-0.jpeg",
     rating: 4,
+    tags: ["Shounen"],
     review: `
       <p>Your full review of <em>JJK 0</em> goes here.</p>
     `
