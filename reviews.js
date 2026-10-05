@@ -18,7 +18,7 @@ const reviews = [
     title: "One Piece: Water 7",
     date: "2026-09-18",
     image: "covers/one-piece-water-7.jpeg",
-    rating: 4,
+    rating: 3.5,
     tags: ["Storytelling"],
     review: `
       <p><em>One Piece: Water 7</em> was truly a fun watch.</p>
@@ -64,13 +64,14 @@ const reviews = [
     title: "One Piece: Skypiea",
     date: "2026-03-15",
     image: "covers/one-piece-skypiea.jpeg",
-    rating: 3.5,
+    rating: 3,
     review: `
       <p><em>Skypiea</em> felt like a detour in the early One Piece story.</p>
       <p>This entire arc felt very different from the previous world that One Piece had built. It was very mystical and it felt like it created a seprate world outside of the previous sagas.</p>
       <p>I liked Alabasta a bit more than this arc, but I did enjoy how it tied in the plotline from Jaya. So far in the series, it felt like each arc follows: Straw Hats show up on island > Islanders feed Luffy > Inslander says something along the lines of "You guys are great, it sucks that our government is so corrupt" > Luffy overthrows the government > They dip.</p>
       <p>In a way, this followed the same general plotline, but I liked how it tied the creation of Skypiea in with Jaya, and the shadow figures we saw at the beginning of the arc. Because of these full circle moments, it felt like a seprate story within the main plotline.</p>
       <p>Eneru was kinda cool I guess. It felt like Eneru vs. Luffy introduced some interesting foresight into the expansion of Luffy's powers.</p>
+      <p>My favorite part of this saga was G-8 for sure. It was so goofy and lighthearted. Zoro being lost 80% of the time, Luffy's antics, AND Condoriano. So peak.</p>
     `
   },
 
@@ -80,8 +81,12 @@ const reviews = [
     date: "2026-03-08",
     image: "covers/perfect-blue.jpeg",
     rating: 5,
+    tags: ["Visuals"],
     review: `
-      <p>Your full review of <em>Perfect Blue</em> goes here.</p>
+      <p>I can see where <em>Black Swan</em> took inspiration from <em>Perfect Blue.</em></p>
+      <p>This movie was incredibly trippy and visually engaging. I loved disecting the film at the end, trying to discern what was real and what wasn't.</p>
+      <p>Mima's slow dive into insanity was displayed very well. As a viewer, it feels like you are going insane as well, because its hard to discern what is happening in the character's head, and what is actually happening.</p>
+      <p>The TV filming scene was a hard watch, but the action scene that followed was one of my favorites in the movie. It was a very engaging watch.</p>
     `
   },
 
@@ -92,8 +97,11 @@ const reviews = [
     image: "covers/one-piece-alabasta.jpg",
     rating: 3,
     review: `
-      <p>Your full review of <em>One Piece: Alabasta</em> goes here.</p>
-      <p>You can write as many paragraphs as you want inside this section.</p>
+      <p><em>Alabasta</em> is when the series <em>really</em> kicks off.</p>
+      <p>I thought I was gonna give up. I asked myself: <em>am I really going to watch 1000 more episodes of this?</em> After watching the Straw Hats noodle around for 90 episodes, I wondered, was it really worth it?</p>
+      <p>Yes, it gets better. Slightly. This show is like a linear rise in watchability. It's a slooooooowwww start. And even this Saga is pretty slow. (Especially when they are trudging across the dessert for 15 episodes.)</p>
+      <p>However, this does pick up the series a bit. Baroque Works was a cool villain-cyndicate. It was also cool to get brief introductions to characters that will be around in the long-haul, which I know because spoilers. Ace was soooo cool, and I really hope we get more plotlines with him.</p>
+      <p>Sanji fucking off for 5 episodes and then showing up to save the day was awesome. And the addition of Chopper and Robin to the crew was great.</p>
     `
   },
 
