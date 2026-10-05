@@ -7,7 +7,7 @@ const reviews = [
     rating: 2.5,
     tags: ["DNF"],
     review: `
-      <p>I watched this because I had seen so much about it on online. But unfortunately, it was not for me.</p>
+      <p>Unfortunately, it was not for me.</p>
       <p>I didn't feel super connected to the characters in the story. Also, the main plot being that they needed to retrive a high schooler's stolen testicles? Idk man.</p>
       <p>In the end, I DNF'd it because I didn't really feel a drive to continue watching at the end of each episode. The intro was a fucking heaterrr though.</p>
     `
