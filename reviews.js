@@ -112,8 +112,13 @@ const reviews = [
     date: "2026-02-10",
     image: "covers/one-piece-east-blue.jpg",
     rating: 2.5,
+    tags: ["Lighthearted"],
     review: `
-      <p>Your full review of <em>One Piece: East Blue</em> goes here.</p>
+      <p><em>East Blue</em> is a slow start to the series, but is lighthearted and fun.</p>
+      <p>I'm not gonna sugarcoat it: it's slow and the animation is tough. But, it is an easy watch with introductions to the East Blue crew. Most of this saga is spent gathering the initial crew before heading to the Grand Line. It does drag at some points and some of the plots are a bit lower energy, notably during Syrup Village (hot take).</p>
+      <p>The highlights for me were Baratie and Arlong Park. Baratie had some solid fight scenes, with Mihawk in a noobs server and Don Kreig vs. Luffy. (To be honest, I'm writing this review while currently in Thriller Bark, and I think its funny how little Don Kreig actually mattered lol.) Also, Sanji's backstory was one of my favorite in this Saga.</p>
+      <p>Arlong Park is the first real, extended arc in the series. Nami's backstory is really good, and the overall plot of the series is entertaining, but there are points that it does drag. For example, when Luffy is drowning for 2 episodes, which lasts 30 seconds, but the show stretches it into 40 minutes. People online say that this is where the series "really picks up", and I can agree that the show does get more interesting at this point. But I don't think that it "picks up" until Alabasta.</p>
+      <p>At this point in my review, I feel like I'm shitting on this saga, but I'm really not. The show just improves so much as you continue.</p>
     `
   },
 
