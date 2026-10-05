@@ -52,7 +52,7 @@ const reviews = [
     image: "covers/one-piece-skypiea.jpeg",
     rating: 3.5,
     review: `
-      <p>Your full review of <em>The Bear</em> goes here.</p>
+      <p>Your full review of <em>One Piece: Skypiea</em> goes here.</p>
       <p>You can write as many paragraphs as you want inside this section.</p>
     `
   },
