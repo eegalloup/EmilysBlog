@@ -909,3 +909,89 @@ main {
     width: min(300px, 75vw);
   }
 }
+
+/* Review tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 24px;
+}
+
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Watch status */
+.tag-favorite {
+  background: #f7c9d4;
+  color: #74233b;
+}
+
+.tag-rewatch {
+  background: #cfe8dc;
+  color: #24553f;
+}
+
+.tag-dnf {
+  background: #e3e3e3;
+  color: #555;
+}
+
+/* Why you liked it */
+.tag-visuals {
+  background: #d9d2f2;
+  color: #483777;
+}
+
+.tag-animation {
+  background: #bfe8ed;
+  color: #17616a;
+}
+
+.tag-lighthearted {
+  background: #fbe7a9;
+  color: #765700;
+}
+
+.tag-storytelling {
+  background: #f1cfaf;
+  color: #76451f;
+}
+
+/* Genres */
+.tag-shounen {
+  background: #f6b6ad;
+  color: #7a2920;
+}
+
+.tag-romance {
+  background: #f4c6e5;
+  color: #7a2858;
+}
+
+.tag-horror {
+  background: #332d3d;
+  color: #fff;
+}
+
+.tag-fantasy {
+  background: #c7d5f5;
+  color: #293f78;
+}
+
+.tag-comedy {
+  background: #f9df91;
+  color: #715300;
+}
+
+.tag-slice-of-life {
+  background: #d8ead0;
+  color: #386131;
+}
