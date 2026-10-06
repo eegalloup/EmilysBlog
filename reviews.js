@@ -156,18 +156,29 @@ const reviews = [
   title: "Attack on Titan",
   date: "2015-03-01",
   image: "covers/attack-on-titan.webp",
-  rating: 0,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>Attack on Titan</em> goes here.</p>`
+  rating: 5,
+  tags: ["Favorite","Storytelling","Animation"],
+  review: `
+    <p>My first anime!</p>
+    <p>This story starts in 2015. I was in 7th grade. My jeggings were black and my shirt was BOGO 50% from Hot Topic. My friend, Cat, told me that I should check out anime. (I don't remember the conversation, as this happened nearly 12 years ago, but I remember that this type of situation happened.</p>
+    <p>At the same time, I had made my first Tumblr account, which had been drowning in AOT content. I decide that this would be a great introduction to the genre. However, I wasn't prepared to compare every show I watched after to this masterpiece.</p>
+    <p>When I started watching, there was only season one, which I had binged over the course of a week. Unfortunately, I had to wait over 2 years for the following season. When season 2 finally released in 2017, anime was slightly more mainstream, so I had friends who were watching the season along with me. As the show continued to release during my time in high school and my early college career, it was so much fun to actively view a show with friends and participate in theories.</p>
+    <p>Overall, I think that the story and, in later seasons, animation is the best of the best. When people dissect shows that have no underlying, full-circle story, I always tell them to watch this show instead. The writing and foresight in Attack on Titan is amazing, and it will always stand as one my favorite shows of all time.</p>
+    <p>It's gritty, dark, exciting, fun, and sad. I want to have a favorite character, but I truly can't decide. I love the complexity of the charatcers and how their motives, ideolegies, and emotions drive the plot. I feel like I'm just glazing AOT at this point in the review, but I believe that this show is perfectly-rated.</p>
+    <p><em>In this review, I am also including the OVAS, just because I don't want to log them seprately. They aren't integral to the plot, but are a cool addition to the story. I recommend them to anyone who watched the show.</em></p>
+    `
 },
 {
   id: "attack-on-titan-junior-high",
   title: "Attack on Titan: Junior High",
   date: "2015-06-01",
   image: "covers/attack-on-titan-junior-high.jpg",
-  rating: 0,
+  rating: 1,
   review: `
-    <p>Your review of <em>Attack on Titan: Junior High</em> goes here.</p>
+    <p>A parody version of the AOT story with silly kid antics.</p>
+    <p>What if all of the titans and the humans were in middle school together, and instead of eating his mom, the titans stole Erens lunch?</p>
+    <p>That's basically it. Obviously, this show is not meant to be taken seriously. It was meant as a comedy to contrast with the bleakness of AOT S1. I watched this because I had to wait soooooo longgggg for S2 when I was in middle school. And as a middle schooler in fandom, I couldn't like something a normal amount; I had to consume every piece of media in that series to feel somewhat satisfied.</p>
+    <p>Would I recommend this to anyone? No. Unless you are an AOT completionist, or if you want to watch the scouts be middle schoolers, I guess.</p>
     `
 },
 {
