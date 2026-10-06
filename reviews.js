@@ -157,10 +157,10 @@ const reviews = [
   date: "2015-03-01",
   image: "covers/attack-on-titan.webp",
   rating: 5,
-  tags: ["Favorite","Storytelling","Animation"],
+  tags: ["Horror","Favorite","Storytelling","Animation"],
   review: `
     <p>My first anime!</p>
-    <p>This story starts in 2015. I was in 7th grade. My jeggings were black and my shirt was BOGO 50% from Hot Topic. My friend, Cat, told me that I should check out anime. (I don't remember the conversation, as this happened nearly 12 years ago, but I remember that this type of situation happened.</p>
+    <p>This story starts in 2015. I was in 7th grade. My jeggings were black and my shirt was BOGO 50% from Hot Topic. My friend, Cat, told me that I should check out anime. (I don't remember the conversation, as this happened nearly 12 years ago, but I remember that this type of situation happened.)</p>
     <p>At the same time, I had made my first Tumblr account, which had been drowning in AOT content. I decide that this would be a great introduction to the genre. However, I wasn't prepared to compare every show I watched after to this masterpiece.</p>
     <p>When I started watching, there was only season one, which I had binged over the course of a week. Unfortunately, I had to wait over 2 years for the following season. When season 2 finally released in 2017, anime was slightly more mainstream, so I had friends who were watching the season along with me. As the show continued to release during my time in high school and my early college career, it was so much fun to actively view a show with friends and participate in theories.</p>
     <p>Overall, I think that the story and, in later seasons, animation is the best of the best. When people dissect shows that have no underlying, full-circle story, I always tell them to watch this show instead. The writing and foresight in Attack on Titan is amazing, and it will always stand as one my favorite shows of all time.</p>
@@ -174,6 +174,7 @@ const reviews = [
   date: "2015-06-01",
   image: "covers/attack-on-titan-junior-high.jpg",
   rating: 1,
+  tags: ["Comedy"],
   review: `
     <p>A parody version of the AOT story with silly kid antics.</p>
     <p>What if all of the titans and the humans were in middle school together, and instead of eating his mom, the titans stole Erens lunch?</p>
