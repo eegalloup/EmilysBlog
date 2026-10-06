@@ -132,7 +132,9 @@ const reviews = [
     rating: 4,
     tags: ["Shounen"],
     review: `
-      <p>Your full review of <em>JJK 0</em> goes here.</p>
+      <p>This movie got me back into anime.</p>
+      <p>I had watched JJK S1 during COVID, just as lockdown was starting to lift. I really enjoyed the show, but once I got to college, I didn't have a lot of time to binge TV shows or invest in a series.</p>
+      <p>Just after college ended, I watched this movie late at night, then I immediately binged all of S2 that night. This movie is a great, short story in the JJK universe. I loved Yuta's character design, and the reveal of what his powers truly are. Whenever someone asks me what anime they should start with, I always say JJK or AOT.</p>
     `
   },
 
@@ -141,8 +143,13 @@ const reviews = [
   title: "Akira",
   date: "2020-06-01",
   image: "covers/akira.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Akira</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Cyberpunk","Horror","Animation"],
+  review: `
+    <p><em>Akira</em> had spectacular animation and I recommend it to everyone, even those that don't "watch anime".</p>
+    <p>When I first watched Akira, I was immediately reminded of Stranger Things. Obviously, kids in a government experiment with psychic powers. It's really cool to see how many pieces of media this movie influenced, especially in animation.</p>
+    <p>We've all seen the "Akira Slide", whether we realize it or not. So much of the hand-drawn animation in this movie is breathtaking. The immense amount of detail in the backgrounds is amazing. I recommend this movie to everyone!</p>
+    `
 },
 {
   id: "attack-on-titan",
@@ -159,7 +166,9 @@ const reviews = [
   date: "2015-06-01",
   image: "covers/attack-on-titan-junior-high.jpg",
   rating: 0,
-  review: `<p>Your review of <em>Attack on Titan: Junior High</em> goes here.</p>`
+  review: `
+    <p>Your review of <em>Attack on Titan: Junior High</em> goes here.</p>
+    `
 },
 {
   id: "tokyo-ghoul",
@@ -320,7 +329,7 @@ const reviews = [
 {
   id: "blend-s",
   title: "Blend S",
-  date: "2019-02-30",
+  date: "2019-02-20",
   image: "covers/blend-s.jpg",
   rating: 0,
   review: `<p>Your review of <em>Blend S</em> goes here.</p>`
@@ -328,7 +337,7 @@ const reviews = [
 {
   id: "say-i-love-you",
   title: "Say \"I Love You.\"",
-  date: "2016-02-30",
+  date: "2016-02-20",
   image: "covers/say-i-love-you.jpg",
   rating: 0,
   review: `<p>Your review of <em>Say "I Love You."</em> goes here.</p>`
@@ -336,7 +345,7 @@ const reviews = [
 {
   id: "my-hero-academia",
   title: "My Hero Academia: Season 1",
-  date: "2018-02-30",
+  date: "2018-02-15",
   image: "covers/mha-s1.jpg",
   rating: 0,
   review: `<p>Your review of <em>My Hero Academia</em> goes here.</p>`
@@ -553,16 +562,17 @@ const reviews = [
   title: "NiNoKuni",
   date: "2021-05-30",
   image: "covers/ninokuni.jpeg",
-  rating: 0,
+  rating: .5,
   tags: ["Dementia"],
-  review: `<p>I genuinely have no recollection of the plot of this movie.</p>
-          <p>I do remember that I watched this because I bought the switch game off the discount rack at Walmart for $7. And then I googled it, and it said that NiNoKuni was the related movie. So I watched this to get context for the game, and it must have been so mid that it was completely wiped from my memory. And the game sucked.</p>
+  review: `
+    <p>I genuinely have no recollection of the plot of this movie.</p>
+    <p>I do remember that I watched this because I bought the switch game off the discount rack at Walmart for $7. And then I googled it, and it said that NiNoKuni was the related movie. So I watched this to get context for the game, and it must have been so mid that it was completely wiped from my memory. And the game sucked.</p>
   `
 },
 {
   id: "demon-slayer-kimetsu-no-yaiba",
   title: "Demon Slayer: Kimetsu no Yaiba",
-  date: "2021-02-30",
+  date: "2021-02-01",
   image: "covers/demon-slayer-s1.jpg",
   rating: 0,
   review: `<p>Your review of <em>Demon Slayer: Kimetsu no Yaiba</em> goes here.</p>`
