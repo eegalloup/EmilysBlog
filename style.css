@@ -1000,3 +1000,33 @@ main {
   background: #2d1b4e;
   color: #52f7e8;
 }
+
+.tag-psychological-thriller {
+  background: #4b355d;
+  color: #f4eaff;
+}
+
+.tag-drama {
+  background: #d9b8b0;
+  color: #662f28;
+}
+
+.tag-mecha {
+  background: #a8bdcc;
+  color: #19394f;
+}
+
+.tag-action {
+  background: #edb09d;
+  color: #762a1b;
+}
+
+.tag-crime {
+  background: #515966;
+  color: #ffffff;
+}
+
+.tag-supernatural {
+  background: #c9b6e4;
+  color: #4c2c70;
+}
