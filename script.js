@@ -121,6 +121,7 @@ const genreTags = [
   "Psychological Thriller",
   "Drama",
   "Mecha",
+  "Sports",
   "Action",
   "Crime",
   "Supernatural"
