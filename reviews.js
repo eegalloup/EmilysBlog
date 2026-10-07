@@ -299,7 +299,7 @@ const reviews = [
 {
   id: "magic-kyun-renaissance",
   title: "Magic-Kyun! Renaissance",
-  date: "2016-11-01",
+  date: "2017-02-10",
   image: "covers/magic-kyun.jpg",
   rating: 0,
   review: `<p>Your review of <em>Magic-Kyun! Renaissance</em> goes here.</p>`
