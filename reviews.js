@@ -471,7 +471,7 @@ const reviews = [
 {
   id: "yuri-on-ice",
   title: "Yuri!!! on Ice",
-  date: "2016-10-30",
+  date: "2016-12-22",
   image: "covers/yuri-on-ice.jpeg",
   rating: 0,
   review: `<p>Your review of <em>Yuri!!! on Ice</em> goes here.</p>`
