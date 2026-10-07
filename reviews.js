@@ -187,16 +187,18 @@ const reviews = [
   title: "Tokyo Ghoul",
   date: "2015-07-01",
   image: "covers/tokyo-ghoul.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Tokyo Ghoul</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Horror"],
+  review: `<p></p>`
 },
 {
   id: "noragami",
   title: "Noragami",
   date: "2015-07-01",
   image: "covers/noragami.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Noragami</em> goes here.</p>`
+  rating: 2.5,
+  tags: ["Shounen"],
+  review: `<p></p>`
 },
 {
   id: "devilman-the-birth",
@@ -204,6 +206,7 @@ const reviews = [
   date: "2018-02-01",
   image: "covers/devilman-the-birth.jpg",
   rating: 2.5,
+  tags: ["Horror","Action"],
   review: `
   <p>Instead of reading my review of <em>Devilman: The Birth</em>, listen to my podcast episode!</p>
   <p>https://theclassicholdup.transistor.fm/episodes/devilman-the-birth.</p>
@@ -215,7 +218,8 @@ const reviews = [
   date: "2018-02-01",
   image: "covers/devilman-the-demon-bird.jpg",
   rating: 2,
-  review: `<p>Your review of <em>Devilman: The Demon Bird</em> goes here.</p>`
+  tags: ["Horror","Action"],
+  review: `<p></p>`
 },
 {
   id: "amon-the-apocalypse-of-devilman",
@@ -223,6 +227,7 @@ const reviews = [
   date: "2018-02-01",
   image: "covers/amon.jpg",
   rating: 1,
+  tags: ["Horror","Action","Dementia"],
   review: `<p>Your review of <em>Amon: The Apocalypse of Devilman</em> goes here.</p>`
 },
 {
@@ -231,16 +236,17 @@ const reviews = [
   date: "2018-01-01",
   image: "covers/devilman-crybaby.webp",
   rating: 4,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>Devilman Crybaby</em> goes here.</p>`
+  tags: ["Favorite","Horror"],
+  review: `<p></p>`
 },
 {
   id: "cyborg-009-vs-devilman",
   title: "Cyborg 009 VS Devilman",
   date: "2018-02-01",
   image: "covers/cyborg-009-vs-devilman.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Cyborg 009 VS Devilman</em> goes here.</p>`
+  rating: .5,
+  tags: ["Action"],
+  review: `<p></p>`
 },
 {
   id: "maid-sama",
@@ -278,32 +284,36 @@ const reviews = [
   title: "Ouran High School Host Club",
   date: "2016-04-01",
   image: "covers/ouran.jpeg",
-  rating: 0,
-  review: `<p>Your review of <em>Ouran High School Host Club</em> goes here.</p>`
+  rating: 4,
+  tags: ["Comedy","Romance"],
+  review: `<p></p>`
 },
 {
   id: "jojos-bizarre-adventure-phantom-blood",
   title: "JoJo's Bizarre Adventure: Phantom Blood",
   date: "2019-07-01",
   image: "covers/jojos-phantom-blood.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>JoJo's Bizarre Adventure: Phantom Blood</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 {
   id: "jojos-bizarre-adventure-battle-tendency",
   title: "JoJo's Bizarre Adventure: Battle Tendency",
   date: "2019-09-01",
   image: "covers/jojos-battle-tendency.webp",
-  rating: 0,
-  review: `<p>Your review of <em>JoJo's Bizarre Adventure: Battle Tendency</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 {
   id: "pop-team-epic",
   title: "Pop Team Epic",
   date: "2019-06-01",
   image: "covers/pop-team-epic.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Pop Team Epic</em> goes here.</p>`
+  rating: 2,
+  tags: ["Comedy"],
+  review: `<p></p>`
 },
 {
   id: "ghost-stories",
@@ -311,7 +321,7 @@ const reviews = [
   date: "2018-10-01",
   image: "covers/ghost-stories.jpeg",
   rating: 4,
-  tags: ["Favorite"],
+  tags: ["Favorite","Comedy"],
   review: `<p>Truly one of the best shows of all time. Always a fall rewatch.</p>`
 },
 {
@@ -319,8 +329,9 @@ const reviews = [
   title: "Magic-Kyun! Renaissance",
   date: "2017-02-10",
   image: "covers/magic-kyun.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Magic-Kyun! Renaissance</em> goes here.</p>`
+  rating: 2,
+  tags: ["Romance","Dementia"],
+  review: `<p></p>`
 },
 
 {
@@ -328,8 +339,8 @@ const reviews = [
   title: "AniSava",
   date: "2018-01-01",
   image: "covers/anisava.jpg",
-  rating: 1,
-  tags: ["Confused"],
+  rating: .5,
+  tags: ["Dementia"],
   review: `<p>I truly have no memory of watching this.</p>`
 },
 {
@@ -337,64 +348,72 @@ const reviews = [
   title: "Blue Exorcist",
   date: "2016-05-20",
   image: "covers/blue-exorcist.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Blue Exorcist</em> goes here.</p>`
+  rating: 3,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 {
   id: "black-butler",
   title: "Black Butler",
   date: "2016-06-30",
   image: "covers/black-butler.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Black Butler</em> goes here.</p>`
+  rating: 1,
+  tags: ["Shounen","Action","Comedy"],
+  review: `<p></p>`
 },
 {
   id: "parasyte",
   title: "Parasyte",
   date: "2016-07-01",
   image: "covers/parasyte.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Parasyte -the maxim-</em> goes here.</p>`
+  rating: 2.5,
+  tags: ["Horror"],
+  review: `<p></p>`
 },
 {
   id: "blend-s",
   title: "Blend S",
   date: "2019-02-20",
   image: "covers/blend-s.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Blend S</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Romance","Comedy"],
+  review: `<p></p>`
 },
 {
   id: "say-i-love-you",
   title: "Say \"I Love You.\"",
   date: "2016-02-20",
   image: "covers/say-i-love-you.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Say "I Love You."</em> goes here.</p>`
+  rating: 2,
+  tags: ["Dementia"],
+  review: `<p></p>`
 },
 {
   id: "my-hero-academia",
   title: "My Hero Academia: Season 1",
   date: "2018-02-15",
   image: "covers/mha-s1.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>My Hero Academia</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 {
   id: "my-hero-academia-season-2",
   title: "My Hero Academia: Season 2",
   date: "2018-03-30",
   image: "covers/mha-s2.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>My Hero Academia Season 2</em> goes here.</p>`
+  rating: 4,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 {
   id: "my-hero-academia-season-3",
   title: "My Hero Academia: Season 3",
   date: "2018-10-30",
   image: "covers/mha-s3.webp",
-  rating: 0,
-  review: `<p>Your review of <em>My Hero Academia Season 3</em> goes here.</p>`
+  rating: 4,
+  tags: ["Shounen","Action"],
+  review: `<p></p>`
 },
 
 {
