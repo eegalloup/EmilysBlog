@@ -82,7 +82,7 @@ const reviews = [
     date: "2026-03-08",
     image: "covers/perfect-blue.jpeg",
     rating: 5,
-    tags: ["Horror","Visuals"],
+    tags: ["Psychological Thriller","Horror","Visuals"],
     review: `
       <p>I can see where <em>Black Swan</em> took inspiration from <em>Perfect Blue.</em></p>
       <p>This movie was incredibly trippy and visually engaging. I loved disecting the film at the end, trying to discern what was real and what wasn't.</p>
@@ -495,7 +495,7 @@ const reviews = [
   title: "The Wind Rises",
   date: "2017-01-01",
   image: "covers/the-wind-rises.jpg",
-  rating: 0,
+  rating: 2.5,
   tags: ["Romance","Drama"],
   review: `<p>Your review of <em>The Wind Rises</em> goes here.</p>`
 },
@@ -558,7 +558,7 @@ const reviews = [
   title: "Seraph of the End: Vampire Reign",
   date: "2016-06-30",
   image: "covers/seraph-of-the-end.jpg",
-  rating: 0,
+  rating: 2,
   tags: ["Shounen","Fantasy","Supernatural"],
   review: `<p></p>`
 },
