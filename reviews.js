@@ -203,15 +203,18 @@ const reviews = [
   title: "Devilman: The Birth",
   date: "2018-02-01",
   image: "covers/devilman-the-birth.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Devilman: The Birth</em> goes here.</p>`
+  rating: 2.5,
+  review: `
+  <p>Instead of reading my review of <em>Devilman: The Birth</em>, listen to my podcast episode!</p>
+  <p>https://theclassicholdup.transistor.fm/episodes/devilman-the-birth.</p>
+  `
 },
 {
   id: "devilman-the-demon-bird",
   title: "Devilman: The Demon Bird",
   date: "2018-02-01",
   image: "covers/devilman-the-demon-bird.jpg",
-  rating: 0,
+  rating: 2,
   review: `<p>Your review of <em>Devilman: The Demon Bird</em> goes here.</p>`
 },
 {
@@ -219,7 +222,7 @@ const reviews = [
   title: "Amon: The Apocalypse of Devilman",
   date: "2018-02-01",
   image: "covers/amon.jpg",
-  rating: 0,
+  rating: 1,
   review: `<p>Your review of <em>Amon: The Apocalypse of Devilman</em> goes here.</p>`
 },
 {
@@ -227,7 +230,7 @@ const reviews = [
   title: "Devilman Crybaby",
   date: "2018-01-01",
   image: "covers/devilman-crybaby.webp",
-  rating: 0,
+  rating: 4,
   tags: ["Favorite"],
   review: `<p>Your review of <em>Devilman Crybaby</em> goes here.</p>`
 },
@@ -244,16 +247,31 @@ const reviews = [
   title: "Maid-Sama!",
   date: "2018-05-01",
   image: "covers/maid-sama.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Maid-Sama!</em> goes here.</p>`
+  rating: 3,
+  tags: ["Romance","Comedy"],
+  review: `
+    <p>Surprisingly, kind of good.</p>
+    <p>I started this show with a friend in high school as a joke. It was kind of a "haha, this show looks so dumb, lets get high and watch it." I proceeded to binge the entire show after she left.</p>
+    <p>The intro is a HEATERRRRR. I legit listen to it on cartrips sometimes, because it is that good.</p>
+    <p>I've never actively searched for tsundere shows, even after watching this. I know it's a popular romance sub-category, but I just never actively pursue it. <em>Maid-Sama</em> has an engaging will-they-won't-they-romance plot that does make the viewer want to continue after each episode.</p>
+    <p>Ok, I'm not into maid shows, but if the plot is enjoyable, I will watch a maid show. I'm not saying that this show is a masterpiece, but watching it as a teenager, it was fun and engaging. I would recommend this to people who enjoyed OHSHC.</p>
+    `
 },
 {
   id: "hetalia-axis-powers",
   title: "Hetalia: Axis Powers",
   date: "2016-07-01",
   image: "covers/hetalia.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Hetalia: Axis Powers</em> goes here.</p>`
+  rating: 1.5,
+  tags: ["Comedy"],
+  review: `
+    <p>This show had me in a headlock at a very formative time of my life.</p>
+    <p>I truly think that this show is why I turned out the way that I am. I used to go to the local library every weekday during summer 2016, and watch Hetalia on KissAnime on the public computers. (holy unc)</p>
+    <p>If I were to have a pitch, it would be "What if countries are people in WW2, and it's not depressing, and they're a little gay."</p>
+    <p>I don't remember much of the plot of this, because they are 10-minute episodes of antics or brief, comedy driven historical lessons. I wouldn't say that Hetalia is a feat of storytelling or animation.</p>
+    <p>The fandom though? Brotherrr. This is the most entertaining fandom of all time. The fandom content and incidents range from actually amazing to degenerate. In retrospect, I think its hilarious that every time anything would happen in international geopolitics, there would be Hetalia fanart. US anime boy 911 fanart? Dare I say, heater.</p>
+    <p>The actual show gets a 1.5/5 for me, because its really not that great. But I would give the experience 1,000,000/5. </p>
+  `
 },
 {
   id: "ouran-high-school-host-club",
