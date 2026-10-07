@@ -36,14 +36,19 @@ body {
 main,
 footer {
   max-width: 1120px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 28px;
+  padding: 14px 28px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper);
 }
 
 .brand {
@@ -73,16 +78,15 @@ nav a:hover,
 }
 
 :root {
-  --header-height: 100px;
+  --desktop-header-height: 110px;
 }
 
 .hero {
   position: relative;
-  width: 100vw;
-  height: calc(100dvh - var(--header-height));
-  max-width: none;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
+  height: calc(100svh - var(--desktop-header-height));
   overflow: hidden;
+  line-height: 0;
 }
 
 .hero-image {
@@ -90,23 +94,36 @@ nav a:hover,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center center;
 }
 
 .scroll-arrow {
-  position: absolute;
-  bottom: max(24px, env(safe-area-inset-bottom));
+  position: fixed;
+  bottom: max(22px, env(safe-area-inset-bottom));
   left: 50%;
-  z-index: 10;
+  z-index: 1000;
   display: grid;
   width: 46px;
   height: 46px;
   place-items: center;
   transform: translateX(-50%);
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 50%;
-  color: white;
+  background: rgba(30, 41, 36, 0.18);
+  color: #fff;
   text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.scroll-arrow:hover {
+  transform: translateX(-50%) translateY(5px);
+  background: #fff;
+  color: #1e2924;
+}
+
+.scroll-arrow.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .scroll-arrow svg {
@@ -119,10 +136,14 @@ nav a:hover,
   stroke-width: 1.8;
 }
 
-.scroll-arrow:hover {
-  transform: translateX(-50%) translateY(5px);
-  background: white;
-  color: #1e2924;
+@media (max-width: 600px) {
+  .hero {
+    height: calc(100svh - 68px);
+  }
+
+  .scroll-arrow {
+    bottom: max(20px, env(safe-area-inset-bottom));
+  }
 }
 
 .hero .eyebrow {
@@ -431,7 +452,7 @@ footer {
 .reviews-page {
   max-width: 1120px;
   margin: auto;
-  padding: 0 28px 95px;
+  padding: 0px 28px 95px;
 }
 
 .review-grid,
@@ -499,10 +520,6 @@ footer {
   color: white;
 }
 
-.reviews-page {
-  padding-top: 90px;
-}
-
 .reviews-page h1 {
   margin-top: 10px;
   font-family: "Cubano";
@@ -524,6 +541,39 @@ footer {
   background: #fffdf8;
   color: var(--ink);
   font: inherit;
+}
+
+.review-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 0 32px;
+}
+
+.review-controls label {
+  display: grid;
+  gap: 6px;
+  color: #1e2924;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.review-controls select {
+  min-width: 180px;
+  padding: 10px 12px;
+  border: 1px solid #cfc8bd;
+  border-radius: 3px;
+  background: #fffdf8;
+  color: #1e2924;
+  font: inherit;
+  text-transform: none;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  margin: 12px 0;
 }
 
 @media (max-width: 850px) {
@@ -714,7 +764,7 @@ footer {
 
 .article-page {
   max-width: 1160px;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 .article-page > article {
@@ -824,13 +874,6 @@ nav a,
   font-weight: 400;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--paper);
-}
-
 @media (max-width: 600px) {
   .site-header {
     gap: 14px;
@@ -838,51 +881,19 @@ nav a,
   }
 
   .site-logo img {
-    width: 125px;
+    width: 165px;
   }
 
   .site-header nav {
     gap: 14px;
   }
 
-  .site-header nav a {
-    font-size: 0.72rem;
-    white-space: nowrap;
-  }
   :root {
     --header-height: 68px;
   }
 }
 
-.hero,
-main {
-  overflow: visible !important;
-}
 
-.scroll-arrow {
-  bottom: 32px !important;
-  z-index: 999 !important;
-}
-
-@media (max-width: 700px) {
-  .hero {
-    height: calc(100svh - 70px);
-    min-height: 0;
-    padding: 0;
-  }
-
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 40%;
-  }
-
-  .scroll-arrow {
-    bottom: 28px !important;
-    z-index: 999 !important;
-  }
-}
 
 .review-sidebar {
   align-self: start;
@@ -1029,4 +1040,150 @@ main {
 .tag-supernatural {
   background: #c9b6e4;
   color: #4c2c70;
+}
+
+/* Similar reviews */
+.similar-reviews {
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid #ddd6cc;
+}
+
+.similar-reviews h2 {
+  margin: 6px 0 24px;
+}
+
+.similar-review-scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 4px 2px 16px;
+  scroll-snap-type: x proximity;
+}
+
+.similar-review-card {
+  flex: 0 0 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.similar-review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(30, 41, 36, 0.18);
+}
+
+.similar-review-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.similar-review-copy {
+  padding: 12px 2px 4px;
+}
+
+.similar-review-copy h3 {
+  margin: 0 0 5px;
+  font-size: 1rem;
+}
+
+.similar-review-copy p {
+  margin: 0;
+  color: #716d66;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+/* Mobile full-screen navigation */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    z-index: 2000;
+  }
+
+  /* Larger logo on mobile */
+  .site-logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .site-logo img {
+    width: 165px;
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 5px;
+    width: 42px;
+    padding: 10px 0 10px 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin-left: auto;
+    background: #1e2924;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .site-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fffdf8;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .site-nav a {
+    color: #1e2924;
+    font-family: "Cubano", sans-serif;
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  /* Turn hamburger into an X when open */
+  .menu-toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
 }
