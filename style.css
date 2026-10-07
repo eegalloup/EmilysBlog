@@ -1042,6 +1042,11 @@ nav a,
   color: #4c2c70;
 }
 
+.tag-sports {
+  background: #b7d8c1;
+  color: #1f5736;
+}
+
 /* Similar reviews */
 .similar-reviews {
   margin-top: 72px;
