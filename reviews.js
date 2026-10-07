@@ -421,65 +421,74 @@ const reviews = [
   title: "Little Witch Academia",
   date: "2018-07-30",
   image: "covers/little-witch-academia.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Little Witch Academia</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Fantasy","Comedy","Slice-of-Life"],
+  review: `
+  <p></p>
+  `
 },
 {
   id: "the-castle-of-cagliostro",
   title: "Lupin the 3rd: The Castle of Cagliostro",
   date: "2018-12-30",
   image: "covers/castle-of-cagliostro.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Lupin the 3rd: The Castle of Cagliostro</em> goes here.</p>`
+  rating: 2,
+  tags: ["Action"],
+  review: `<p></p>`
 },
 {
   id: "yamada-kun-and-the-seven-witches",
   title: "Yamada-kun and the Seven Witches",
   date: "2017-02-01",
   image: "covers/yamada-kun.jpeg",
-  rating: 0,
-  review: `<p>Your review of <em>Yamada-kun and the Seven Witches</em> goes here.</p>`
+  rating: 1,
+  tags: ["Romance","Comedy","Supernatural"],
+  review: `<p></p>`
 },
 {
   id: "the-disastrous-life-of-saiki-k",
   title: "The Disastrous Life of Saiki K.",
   date: "2018-12-30",
   image: "covers/saiki-k.jpg",
-  rating: 0,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>The Disastrous Life of Saiki K.</em> goes here.</p>`
+  rating: 4,
+  tags: ["Favorite","Comedy"],
+  review: `<p></p>`
 },
 {
   id: "spirited-away",
   title: "Spirited Away",
   date: "2016-12-30",
   image: "covers/spirited-away.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Spirited Away</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Fantasy"],
+  review: `<p></p>`
 },
 {
   id: "howls-moving-castle",
   title: "Howl's Moving Castle",
   date: "2016-12-30",
   image: "covers/howls-moving-castle.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Howl's Moving Castle</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Fantasy"],
+  review: `<p></p>`
 },
 {
   id: "porco-rosso",
   title: "Porco Rosso",
   date: "2018-10-30",
   image: "covers/porco-rosso.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Porco Rosso</em> goes here.</p>`
+  rating: 3,
+  tags: ["Fantasy"],
+  review: `<p></p>`
 },
 {
   id: "princess-mononoke",
   title: "Princess Mononoke",
   date: "2018-10-15",
   image: "covers/princess-mononoke.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Princess Mononoke</em> goes here.</p>`
+  rating: 4,
+  tags: ["Fantasy"],
+  review: `<p></p>`
 },
 {
   id: "the-wind-rises",
@@ -487,6 +496,7 @@ const reviews = [
   date: "2017-01-01",
   image: "covers/the-wind-rises.jpg",
   rating: 0,
+  tags: ["Romance","Drama"],
   review: `<p>Your review of <em>The Wind Rises</em> goes here.</p>`
 },
 {
@@ -494,48 +504,54 @@ const reviews = [
   title: "Haikyu!! Season 1",
   date: "2015-09-01",
   image: "covers/haikyu-s1.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Haikyu!!</em> goes here.</p>`
+  rating: 4,
+  tags: ["Sports","Shounen"],
+  review: `<p></p>`
 },
 {
   id: "haikyu-2nd-season",
   title: "Haikyu!! Season 2",
   date: "2016-11-30",
-  rating: 0,
   image: "covers/haikyu-s2.webp",
-  review: `<p>Your review of <em>Haikyu!! 2nd Season</em> goes here.</p>`
+  rating: 4,
+  tags: ["Sports","Shounen"],
+  review: `<p></p>`
 },
 {
   id: "yuri-on-ice",
   title: "Yuri!!! on Ice",
   date: "2016-12-22",
   image: "covers/yuri-on-ice.jpeg",
-  rating: 0,
-  review: `<p>Your review of <em>Yuri!!! on Ice</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Sports","Romance","Rewatch"],
+  review: `<p></p>`
 },
 {
   id: "free-iwatobi-swim-club",
   title: "Free! Eternal Summer",
   date: "2016-06-30",
   image: "covers/free.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Free! - Iwatobi Swim Club</em> goes here.</p>`
+  rating: 3,
+  tags: ["Sports","Slice-of-Life"],
+  review: `<p></p>`
 },
 {
   id: "patema-inverted",
   title: "Patema Inverted",
   date: "2017-03-30",
   image: "covers/patema-inverted.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Patema Inverted</em> goes here.</p>`
+  rating: 2,
+  tags: ["Dementia"],
+  review: `<p></p>`
 },
 {
   id: "death-note",
   title: "Death Note",
   date: "2016-07-30",
   image: "covers/death-note.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Death Note</em> goes here.</p>`
+  rating: 4,
+  tags: ["Shounen","Supernatural","Psychological Thriller"],
+  review: `<p></p>`
 },
 {
   id: "seraph-of-the-end-vampire-reign",
@@ -543,7 +559,8 @@ const reviews = [
   date: "2016-06-30",
   image: "covers/seraph-of-the-end.jpg",
   rating: 0,
-  review: `<p>Your review of <em>Seraph of the End: Vampire Reign</em> goes here.</p>`
+  tags: ["Shounen","Fantasy","Supernatural"],
+  review: `<p></p>`
 },
 {
   id: "i-want-to-eat-your-pancreas",
@@ -551,7 +568,7 @@ const reviews = [
   date: "2020-09-24",
   image: "covers/i-want-to-eat-your-pancreas.jpg",
   rating: 4,
-  tags: ["Emotional Torture"],
+  tags: ["Drama","Romance","Slice-of-Life"],
   review: `<p><em>I Want to Eat Your Pancreas</em> is emotional torture porn. </p>
   <p>This was UNBELIEVABLY sad. I cried for two hours straight. snotty nose crying. It was not pretty. This was an amazing movie, but i will never watch it again.
  <p>The animation was amazing, especially on the fireworks scene. The story was impeccable. It was well-written and well-executed. I do think the endless sadness in the end was a little overwhelming thought. It felt like I was getting repeatedly punched in the gut every 8 minutes for that last 1/3. However, the ending was really beautiful and added a twinge of happinesses to it haha. I think my favorite thing was definitely the main characters growth. Obviously, that’s the main point of the movie, but it was so emotionally powerful and endearing. I went from wanting to beat him to death with a hammer to wanting the best for him. 😎</p>`
@@ -561,16 +578,18 @@ const reviews = [
   title: "The Promised Neverland: Season 1",
   date: "2020-12-13",
   image: "covers/the-promised-neverland.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>The Promised Neverland</em> goes here.</p>`
+  rating: 4,
+  tags: ["Horror","Shounen"],
+  review: `<p></p>`
 },
 {
   id: "given",
   title: "Given",
   date: "2020-12-30",
   image: "covers/given.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Given</em> goes here.</p>`
+  rating: 2.5,
+  tags: ["Romance","Slice-of-Life"],
+  review: `<p></p>`
 },
 
 {
@@ -578,33 +597,36 @@ const reviews = [
   title: "Astra Lost in Space",
   date: "2020-12-13",
   image: "covers/astra-lost-in-space.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Astra Lost in Space</em> goes here.</p>`
+  rating: 2,
+  tags: ["Mystery","Sci-Fi"],
+  review: `<p>If <em>Among Us</em> was an anime.</p>`
 },
 {
   id: "kakegurui",
   title: "Kakegurui: Season 1",
   date: "2020-05-30",
   image: "covers/kakegurui.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Kakegurui</em> goes here.</p>`
+  rating: 2,
+  tags: ["Psychological Thriller"],
+  review: `<p>This is porn without sex.</p>`
 },
 {
   id: "great-pretender",
   title: "Great Pretender",
   date: "2020-12-13",
   image: "covers/great-pretender.webp",
-  rating: 0,
-  review: `<p>Your review of <em>Great Pretender</em> goes here.</p>`
+  rating: 3.5,
+  tags: ["Crime","Comedy","Drama"],
+  review: `<p></p>`
 },
 {
   id: "children-of-the-sea",
   title: "Children of the Sea",
   date: "2021-04-30",
   image: "covers/children-of-the-sea.webp",
-  rating: 0,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>Children of the Sea</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Favorite","Fantasy","Drama"],
+  review: `<p></p>`
 },
 {
   id: "ni-no-kuni",
@@ -620,11 +642,12 @@ const reviews = [
 },
 {
   id: "demon-slayer-kimetsu-no-yaiba",
-  title: "Demon Slayer: Kimetsu no Yaiba",
+  title: "Demon Slayer: Season One",
   date: "2021-02-01",
   image: "covers/demon-slayer-s1.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Demon Slayer: Kimetsu no Yaiba</em> goes here.</p>`
+  rating: 4,
+  tags: ["Shounen","Action","Fantasy"],
+  review: `<p></p>`
 },
 
 {
@@ -632,17 +655,17 @@ const reviews = [
   title: "Demon Slayer: The Movie - Mugen Train",
   date: "2021-04-23",
   image: "covers/demon-slayer-mugen-train.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train</em> goes here.</p>`
+  rating: 4,
+  review: `<p>Watched this in theaters thrice!</p>`
 },
 {
   id: "mob-psycho-100",
   title: "Mob Psycho 100",
   date: "2021-06-15",
   image: "covers/mob-psycho-100.jpg",
-  rating: 0,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>Mob Psycho 100</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Favorite","Shounen","Slice-of-Life","Supernatural","Comedy"],
+  review: `<p>TS SO PEAK!</p>`
 },
 
 {
@@ -650,8 +673,9 @@ const reviews = [
   title: "Neon Genesis Evangelion",
   date: "2021-07-20",
   image: "covers/neon-genesis-evangelion.jpg",
-  rating: 0,
-  review: `<p>Your review of <em>Neon Genesis Evangelion</em> goes here.</p>`
+  rating: 4,
+  tags: ["Shounen","Mecha","Drama"],
+  review: `<p></p>`
 },
 
 {
@@ -659,9 +683,9 @@ const reviews = [
   title: "The End of Evangelion",
   date: "2022-09-23",
   image: "covers/end-of-evangelion.jpg",
-  rating: 0,
-  tags: ["Favorite"],
-  review: `<p>Your review of <em>End of Evangelion</em> goes here.</p>`
+  rating: 4.5,
+  tags: ["Favorite","Shounen","Mecha","Drama"],
+  review: `<p></p>`
 },
 
 ];
