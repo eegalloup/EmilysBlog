@@ -317,7 +317,7 @@ const reviews = [
 {
   id: "blue-exorcist",
   title: "Blue Exorcist",
-  date: "2016-12-30",
+  date: "2016-05-20",
   image: "covers/blue-exorcist.jpg",
   rating: 0,
   review: `<p>Your review of <em>Blue Exorcist</em> goes here.</p>`
