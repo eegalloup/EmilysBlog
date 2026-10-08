@@ -22,7 +22,7 @@ const reviews = [
     tags: ["Shounen","Storytelling"],
     review: `
       <p><em>One Piece: Water 7</em> was truly a fun watch.</p>
-      <p> I feel like this is the point in the show where the stakes have raised and the overarching plot starts to emerge. We are introduced to the World Government as the main villains and have solidified the idea of the Blank Century, which I am excited to see unfold. </p>
+      <p> I feel like this is the point in the show where the stakes have raised and the overarching plot starts to emerge. We are introduced to the war against the World Government and the Blank Century, which I am excited to see unfold. </p>
       <p> I forsee Nico Robin's backstory being an integral part of the plotline (I hope). I hope that there is continuous reasearch into the polyglyphs as the show progresses, but I feel like they might forget about them for 500 episodes. Who knows.</p>
       <p> Also, I loved the addition of Franky to the show. He is a character that is easy to enjoy and fits well with the Straw Hats' dynamic. I have been Franky-pilled. SUUUUUPERRRR!!!★</p>
     `
