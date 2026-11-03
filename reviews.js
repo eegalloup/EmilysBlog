@@ -1,5 +1,21 @@
 const reviews = [
   {
+    id: "one-piece-thriller-bark",
+    title: "One Piece: Thriller Bark",
+    date: "2026-10-12",
+    image: "covers/one-piece-thriller-bark.webp",
+    rating: 3.5,
+    tags: ["Shounen"],
+    review: `
+      <p><em>Thriller Bark</em> was a super fun watch in the Halloween season.</p>
+      <p>I am so happy that I unintentionally timed my viewing of Thriller Bark in the month of October. It was a fun watch, and was genuinely funny.</p>
+      <p>The addition of Brook to the crew is perfect. At first I wasn't sold, but I love him in the Straw Hats. The Laboon callback was so good, and I hope to see Laboon again someday. Genuine tears were shed during the Laboon episodes.</p>
+      <p>The entire arc felt super goofy and lighthearted, which I really enjoyed. The Zoro vs Zombie Samurai fight was super good. I'm excited to see if that character is referenced again during the Wado arc.</p>
+      <p>Overall, fun watch. I may watch parts of this again in future Halloween seasons.</p>
+    `
+  },
+  
+  {
     id: "dandadan",
     title: "DanDaDan",
     date: "2026-10-05",
